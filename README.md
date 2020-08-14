@@ -19,7 +19,7 @@ Use [this script](https://helife.digital/script/BloatedDotFiles_intstaller.sh) t
 You can just run through a terminal and wait with :
 
 ```sh
-curl -LO https://helife.digital/script/BloatedDotFiles_intstaller && sh BloatedDotFiles_intstaller.sh
+curl -LO https://helife.digital/script/BloatedDotFiles_intstaller.sh && sh BloatedDotFiles_intstaller.sh
 ```
 
 Just make sure to have git installed before
