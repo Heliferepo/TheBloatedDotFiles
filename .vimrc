@@ -352,8 +352,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'Heliferepo/VimTek'
 "Plugin made by me for the Epitech Curriculum
 
-Plug 'Heliferepo/Easy_compile.vim'
-"Plugin to compile fast my programs
+Plug 'Heliferepo/VimUtils'
+"My plugins that regroups all the VimUtilities
 
 Plug 'mbbill/undotree'
 "Use better my undodir and undotree
@@ -377,14 +377,6 @@ Plug 'terryma/vim-multiple-cursors'
 
 Plug 'mariappan/dragvisuals.vim'
 "Enable moving "Visual blocks" in Visual mode
-
-"Plug 'Heliferepo/hlnext.vim'
-"Better searching with "special" blinking visual
-
-"Plug 'vim-scripts/c.vim'
-"Testing out the c vim reference
-"Dope but can be annoying for the Epitech's curriculum
-"Might certainly use it outside of school
 
 Plug 'alpertuna/vim-header'
 "Cool headers
