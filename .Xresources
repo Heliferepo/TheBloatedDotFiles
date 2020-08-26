@@ -35,25 +35,6 @@
 *.color7:       #ababab
 *.color15:      #f9f9f9
 
-!! URxvt Appearance
-
-URxvt.font: xft:Terminus (TTF):regular:size=9
-URxvt.boldFont: xft:Terminus (TTF):regular:size=9
-URxvt.italicFont: xft:Terminus (TTF):regular:size=9
-URxvt.boldItalicfont: xft:Terminus (TTF):regular:size=9
-URxvt.letterSpace: 0
-URxvt.lineSpace: 0
-URxvt.geometry: 92x24
-URxvt.internalBorder: 24
-URxvt.cursorBlink: true
-URxvt.cursorUnderline: false
-URxvt.saveline: 2048
-URxvt.scrollBar: false
-URxvt.scrollBar_right: false
-URxvt.urgentOnBell: true
-URxvt.depth: 24
-URxvt.iso14755: false
-
 !! Common Keybinds for Navigations
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
