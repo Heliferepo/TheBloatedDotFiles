@@ -148,5 +148,5 @@ mode "resize" {
 }
 
 exec setxkbmap fr
-exec nitrogen ~/.config/wall.png
+exec nitrogen --set-auto ~/.config/wall.png
 exec ./~/.config/polybar/launch.sh
