@@ -1,4 +1,5 @@
 set $mod Mod1
+set $super Mod4
 
 set $ws1 "1"
 set $ws2 "2"
@@ -24,6 +25,9 @@ new_window pixel
 default_border pixel 0
 
 bindsym $mod+d exec dmenu_run -b
+bindsym $super+d exec ~/.config/rofi/scripts/apps.sh
+bindsym $super+i exec ~/.config/rofi/scripts/menu_quicklinks.sh
+bindsym $super+p exec ~/.config/rofi/scripts/menu_screenshot.sh
 
 focus_follows_mouse no
 
@@ -107,6 +111,9 @@ for_window [title="win0"] floating enable
 ## MODES ##
 
 # Gaps
+gaps inner 8
+gaps outer 8
+
 set $mode_gaps Gaps: 0 | + | -
 
 mode "$mode_gaps" {
@@ -135,3 +142,6 @@ mode "resize" {
                 bindsym $mod+r mode "default"
 }
 
+exec setxkbmap fr
+exec nitrogen ~/.config/wall.png
+exec ./~/.config/polybar/launch.sh

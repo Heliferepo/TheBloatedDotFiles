@@ -13,21 +13,21 @@ files="ﱮ"
 editor=""
 browser=""
 music=""
-settings="漣"
+discord="discord"
 
 # Variable passed to rofi
-options="$terminal\n$files\n$editor\n$browser\n$music\n$settings"
+options="$terminal\n$files\n$editor\n$browser\n$music\n$discord"
 
 chosen="$(echo -e "$options" | $rofi_command -p "Most Used" -dmenu -selected-row 0)"
 case $chosen in
     $terminal)
-        termite &
+	i3-sensible-editor &
         ;;
     $files)
-        thunar &
+	nautilus
         ;;
     $editor)
-        geany &
+        vim &
         ;;
     $browser)
         firefox &
@@ -35,8 +35,8 @@ case $chosen in
     $music)
         lxmusic &
         ;;
-    $settings)
-        xfce4-settings-manager &
-        ;;
+    $discord)
+	discord &
+	;;
 esac
 

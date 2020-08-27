@@ -19,4 +19,4 @@
  *
  */
 
-@import "colorschemes/gruvbox.rasi"
+@import "colorschemes/inside.rasi"
