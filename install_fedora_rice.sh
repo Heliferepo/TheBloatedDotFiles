@@ -8,6 +8,13 @@ fi
 
 HOME_PATH=$HOME
 
+install_zsh() {
+	sudo dnf install zsh
+	wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+	sudo dnf install util-linux-user -y
+	sudo chsh -s /usr/bin/zsh
+}
+
 install_dependencies() {
 	sudo dnf install libxcb-devel xcb-util-keysyms-devel xcb-util-devel xcb-util-wm-devel xcb-util-xrm-devel yajl-devel libXrandr-devel startup-notification-devel libev-devel xcb-util-cursor-devel libXinerama-devel libxkbcommon-devel libxkbcommon-x11-devel pcre-devel pango-devel git gcc automake i3status i3lock polybar rofi git xbacklight dunst acpi xfce4-power-manager-settings mpd mpc dnsutils nmcli nmtui bmon nm-connection-editor termite firefox scrot maim viewnior amixer zip unzip lxmusic vim firefox discord rxvt-unicode
 }
@@ -39,6 +46,7 @@ install_i3_gaps() {
 	sudo make install
 }
 
+install_zsh
 install_dependencies
 install_config
 install_i3_gaps
