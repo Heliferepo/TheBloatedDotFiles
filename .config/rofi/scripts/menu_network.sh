@@ -36,11 +36,10 @@ else
 fi
 
 ## Icons
-bmon="龍"
 launch_cli=""
 launch="歷"
 
-options="$connected\n$bmon\n$launch_cli\n$launch"
+options="$connected\n$launch_cli\n$launch"
 
 ## Main
 chosen="$(echo -e "$options" | $rofi_command -p "$SSID  :  $PIP" -dmenu $active $urgent -selected-row 1)"
@@ -51,9 +50,6 @@ case $chosen in
 		else
 			nmcli radio wifi on
 		fi 
-        ;;
-    $bmon)
-        termite -e bmon
         ;;
     $launch_cli)
         termite -e nmtui

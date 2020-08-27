@@ -77,6 +77,11 @@ bindsym $mod+Shift+g mode "$mode_gaps"
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you wish to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $super+Shift+e exec ~/.config/rofi/scripts/powermenu.sh
+
+# manage wifi
+
+bindsym $super+w exec ~/.config/rofi/scripts/menu_network.sh
 
 # workspaces
 bindsym $mod+1 workspace $ws1
