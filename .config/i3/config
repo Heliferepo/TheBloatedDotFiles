@@ -24,7 +24,7 @@ font pango:RobotoMono 9
 new_window pixel
 default_border pixel 0
 
-bindsym $mod+d exec dmenu_run -b
+bindsym $mod+d exec dmenu_run -nb '#1e1e1e' -sb '#f4800d' -sf '#1e1e1e'
 bindsym $super+d exec ~/.config/rofi/scripts/apps.sh
 bindsym $super+i exec ~/.config/rofi/scripts/menu_quicklinks.sh
 bindsym $super+p exec ~/.config/rofi/scripts/menu_screenshot.sh
